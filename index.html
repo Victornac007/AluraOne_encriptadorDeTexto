@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 200px) and (max-width: 1070px)">
     <script src="script.js"></script>
     <title>Encriptador</title>
 </head>
 <body>
-    <main>
+    <main>  
         <section class="left-side">
             <header class="content-Logo">
                 <img class="logo" src="/practice/img/Vectorlogo.png" alt="Logo Alura">
@@ -27,8 +28,8 @@
             </section>
     
             <section class="content-buttons">
-                <button id="boton_encriptar" onclick="encriptar()">Encriptar</button>
-                <button id="boton_desencriptar" onclick="desencriptar()">Desencriptar</button>
+                <button class="button" id="boton_encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="button" id="boton_desencriptar" onclick="desencriptar()">Desencriptar</button>
             </section>
         </section>
         <section class="rigth-side">
