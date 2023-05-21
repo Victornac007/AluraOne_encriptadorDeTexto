@@ -5,32 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/practice/reset.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js"></script>
     <title>practice</title>
 </head>
 <body>
     <main>
-        <header class="content-Logo">
-            <img src="/practice/img/Vectorlogo.png" alt="Logo Alura">
-        </header>
+        <section class="left-side">
+            <header class="content-Logo">
+                <img class="logo" src="/practice/img/Vectorlogo.png" alt="Logo Alura">
+            </header>
 
-        <section class="content-input">
-            <article>
-                <textarea name="texto1" id="in" cols="30" rows="10"></textarea>
-            </article>
-            <article class="article-advertencia">
-                <img src="/practice/img/Vectoricon.png" alt="icono de advertencia">
-                <p>Solo letras minúsculas y sin acentos</p>
-            </article>
+            <section class="content-input">
+                <article>
+                    <textarea id="inputTexto" class="textInput" type="text" placeholder="Ingrese el texto aqui" cols="5" rows="5" required="" ></textarea>
+                </article>
+                <article class="article-advertencia">
+                    <img src="img/Vectoricon.png" alt="icono de advertencia">
+                    <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+                </article>
+            </section>
+    
+            <section class="content-buttons">
+                <button id="boton_encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="boton_desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </section>
         </section>
-
-        <section class="content-buttons">
-            <button class="button" id="encriptar">Encriptar</button>
-            <button class="button">Desencriptar</button>
-        </section>
-        <section class="content-output">
-            <p>Ningún mensaje fue encontrado</p>
-            <textarea name="texto2" id="out" cols="30" rows="10"></textarea>
+        <section class="rigth-side">
+            <section class="content-output">
+                <img id="Img" src="img/munheco.png" alt="imagen de munheco viendo un diamente con lupa, dando alución de búsqueda">
+                <p id="texto">Ningún mensaje fue encontrado</p>
+                <textarea name="texto2" id="texto2" cols="30" rows="5">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+                <button id="copiar" onclick="copy()">¡Copiar!</button>
+            </section>
         </section>
     </main>    
 </body>
