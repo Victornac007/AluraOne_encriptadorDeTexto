@@ -52,7 +52,8 @@ function copy() {
 
 const miTextarea = document.querySelector('#texto2');
 
-miTextarea.addEventListener('input',function(){
+
+miTextarea.addEventListener('input', function(){
   this.style.height = 'auto';
   this.style.height = (this.scrollHeight) + 'px';
 });
